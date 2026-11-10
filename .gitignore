@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.pytest_cache/
+*.egg-info/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Lakehouse runtime data artifacts
+data_lake/bronze/audio/*
+!data_lake/bronze/audio/.gitkeep
+data_lake/bronze/events/*
+!data_lake/bronze/events/.gitkeep
+data_lake/silver/*
+!data_lake/silver/.gitkeep
+data_lake/gold/*
+!data_lake/gold/.gitkeep
+*.duckdb
+*.duckdb.wal
+
+# Logs
+logs/
+*.log
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
